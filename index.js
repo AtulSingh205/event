@@ -746,34 +746,123 @@
 // chain()
 
 // -----------------------traficlight10----------------------
-red = () => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve("Red Light(ruk j Bhai 🫸)🔴")
-        }, 2000)
-    })
-}
-yellow = () => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve("yellow(Bhai ready rehna hmla kbhi bhi ho skta hai 😁) 🟡")
-        }, 2000)
-    })
-}
-green=()=>{
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            resolve("Green (Ja bahi ji le apni jndgi) 🟢")
-        },3000)
-    })
-}
-async function traficlight() {
-     let a = await red()
-     console.log(a)
-     let b = await yellow()
-     console.log(b)
-     let c= await green()
-     console.log(c)
+// red = () => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("Red Light(ruk j Bhai 🫸)🔴")
+//         }, 2000)
+//     })
+// }
+// yellow = () => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("yellow(Bhai ready rehna hmla kbhi bhi ho skta hai 😁) 🟡")
+//         }, 2000)
+//     })
+// }
+// green=()=>{
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             resolve("Green (Ja bahi ji le apni jndgi) 🟢")
+//         },3000)
+//     })
+// }
+// async function traficlight() {
+//      let a = await red()
+//      console.log(a)
+//      let b = await yellow()
+//      console.log(b)
+//      let c= await green()
+//      console.log(c)
 
-}
-traficlight()
+// }
+// traficlight()
+// -----------------------heigher order function-----------------
+//  function nam(a,b,oprt){//heighe order function
+//     return oprt(a,b);
+// }
+// function sum(a,b){
+//     return a+b;
+// }
+// let a =nam(2,3,sum)
+// console.log(a)
+// -----------arrayofbjc---------
+// let arr=[
+//     {name:"Atul",age:20,locaton:"Mughalsrai",clg:"Shepa"},
+//     {name:"Karan",age:20,locaton:"Mughalsrai",clg:"Shepa"},
+//     {name:"patel",age:20,locaton:"Mughalsrai",clg:"Shepa"},
+//     {name:"amitpal",age:20,locaton:"Mughalsrai",clg:"Shepa"}  
+// ]
+// console.log(arr)
+
+// -------------------------arrayinmap----------------
+// const arr=[1,2,3,4,5];
+// const arr2=[];
+// for(let i = 0;i<arr.length;i++){
+//      arr2[i]=arr[i]+1
+//     // console.log(arr[i]+1)
+
+// }
+// for(let i =0;i<arr.length;i++){
+//     console.log(arr2[i])
+// }
+// ---------------arrmap--------------
+// const arr1=[1,2,3,4,5]
+// const arr2=arr1.map((item ,value)=>(
+//     item+1
+// ))
+// console.log(arr2)
+
+// ---------------explicit-------------
+// const arr1=[1,2,3,4,5]
+// const arr2=arr1.map((item ,value)=>{
+//    return item+1;
+// })
+// console.log(arr2)
+
+// ----------------practicemap -------------
+// let arr=[1,2,3,4,5]
+// let brr=arr.map((item,value)=>{
+//     return item+1;
+// })
+// console.log(brr)
+
+// ---------------practicewithotmap------------
+// let arr=[1,2,3,4,5]
+// // let arr2=[]
+// for(let i =0;i<arr.length;i++){
+//     arr[i]=arr[i]+1
+// }
+// console.log(arr)
+
+
+// -----------------how work--------------
+// let arr=["a","b","c","d","e"]
+// let brr=arr.map((item,value)=>{
+//      console.log(`item: ${item} and value:${value}`)
+//      return item 
+//     })
+// console.log(brr)
+// -------------------filter-----------
+// let arr=[1,2,3,4,5]
+// let brr=arr.filter((item,value)=>{
+//     console.log(`item: ${item} and value: ${value}`)
+//     return item%2==0;
+// })
+// console.log(brr)
+// ----------------reduce-----------------
+// let arr=[1,2,3,4,5]
+// let brr=arr.reduce((acm,value)=>{
+//     console.log(`acm: ${acm} and value: ${value}`)
+//     // return acm+1
+// },0)
+// console.log(brr)
+// -----------------promise---------------
+let nam = new Promise (function(reslove,reject){
+     setTimeout(() => {
+         reslove("ho gya resolve")
+     }, 3000);
+}) 
+nam.then((item)=>{
+    console.log(item)
+})
