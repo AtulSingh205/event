@@ -858,11 +858,36 @@
 // },0)
 // console.log(brr)
 // -----------------promise---------------
-let nam = new Promise (function(reslove,reject){
-     setTimeout(() => {
-         reslove("ho gya resolve")
-     }, 3000);
-}) 
-nam.then((item)=>{
-    console.log(item)
-})
+// let nam = new Promise (function(reslove,reject){
+//      setTimeout(() => {
+//          reslove("ho gya resolve")
+//      }, 3000);
+// }) 
+// nam.then((item)=>{
+//     console.log(item)
+// })
+
+// ---------------------practice---------------
+// let arr=[1,2,3,4,5]
+// let newarr=arr.slice(1,4)
+// console.log(newarr)
+
+// let arr=[1,2,3,4,5]
+// let newarr=arr.map((val)=>{
+//     return val*val
+// })
+// console.log(newarr)
+
+// key boolean 
+// let obj={
+//     name : "Atul",
+//     20:"Age",
+//     true:"location"
+// }
+// console.log(obj[true])
+
+let arr=[1,2,34,5]
+let store =  arr.filter((itm)=>  itm%2==0)
+console.log(store)
+let store1= arr.find((itm)=>itm%2==0)
+console.log(store1)
