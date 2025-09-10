@@ -10,10 +10,10 @@ container.addEventListener("submit", function (e) {
     let profile = document.createElement("div")
     profile.classList.add("profile")
     let img = document.createElement("img")
-    img.setAttribute("src", input[0].value)
-    let h1 = document.createElement("h1")
+    img.setAttribute("src", input[0].value);
+    let h1 = document.createElement("h1");
     h1.textContent = (input[1].value)
-    let h2 = document.createElement("h2")
+    let h2 = document.createElement("h2");
     h2.textContent = (input[2].value)
     card.appendChild(profile)
     profile.appendChild(img)
