@@ -15,9 +15,9 @@ container.addEventListener("submit", function (e) {
     h1.textContent = (input[1].value)
     let h2 = document.createElement("h2");
     h2.textContent = (input[2].value)
-    card.appendChild(profile)
-    profile.appendChild(img)
-    card.appendChild(h1)
+    card.appendChild(profile);
+    profile.appendChild(img);
+    card.appendChild(h1);
     card.appendChild(h2)
     container.appendChild(card)
 
